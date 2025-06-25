@@ -14,16 +14,6 @@ Pour tester directement les fonctionnalités de l’application, vous pouvez uti
 
 L’application est pré-remplie avec des comptes utilisateurs et des élections fictives afin de vous offrir un premier aperçu complet dès la connexion.
 
-Toujours afficher les détails
-
-Copier
-from pathlib import Path
-
-readme_path = Path("/mnt/data/README.md")
-readme_content = readme_path.read_text()
-
-# Nouvelle section à insérer
-functionality_section = """
 ## 🧭 Fonctionnement de l'application
 
 L'application **VoteSecure** fonctionne selon un modèle d'interaction fluide entre les différents rôles d'utilisateurs :
@@ -57,7 +47,7 @@ L'application **VoteSecure** fonctionne selon un modèle d'interaction fluide en
 
 ### 🗂️ Données Fictives
 
-- Pour faciliter la démonstration, plusieurs comptes (admin, électeur, candidat, spectateur) ainsi qu’une **élection fictive avec des postes** et des candidatures ont déjà été créés.
+- Pour faciliter la démonstration, plusieurs comptes (admin, électeur, candidat, spectateur) ainsi que des  **élections fictives avec des postes** et des candidatures ont déjà été créés.
 - Ces données permettent de tester l’ensemble du processus dès le premier lancement.
 
 ---
