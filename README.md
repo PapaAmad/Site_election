@@ -1,6 +1,70 @@
 # 🗳️ VoteSecure - Plateforme de Vote Électronique
 
-Une plateforme complète de vote électronique sécurisée avec backend Node.js, base de données SQLite et frontend React.
+Découvrez notre plateforme de vote électronique en ligne :  
+🔗 **Accédez à l'application ici** 👉 [https://site-election.vercel.app](https://site-election.vercel.app)
+
+Pour tester directement les fonctionnalités de l’application, vous pouvez utiliser l’un des comptes suivants :
+
+| Rôle           | Email                           | Mot de passe   |
+|----------------|----------------------------------|----------------|
+| 🛠️ Admin       | admin@votesecure.sn              | admin123       |
+| 👤 Candidat     | aissatou.diop@education.sn       | candidate123   |
+| 🗳️ Électeur     | mamadou.fall@education.sn        | voter123       |
+| 👁️ Spectateur  | fatou.sarr@education.sn          | spectator123   |
+
+L’application est pré-remplie avec des comptes utilisateurs et des élections fictives afin de vous offrir un premier aperçu complet dès la connexion.
+
+Toujours afficher les détails
+
+Copier
+from pathlib import Path
+
+readme_path = Path("/mnt/data/README.md")
+readme_content = readme_path.read_text()
+
+# Nouvelle section à insérer
+functionality_section = """
+## 🧭 Fonctionnement de l'application
+
+L'application **VoteSecure** fonctionne selon un modèle d'interaction fluide entre les différents rôles d'utilisateurs :
+
+### 🔐 Inscription et Authentification
+
+- Tout utilisateur peut s’inscrire via la plateforme, que ce soit comme **candidat**, **électeur** ou **spectateur**.
+- Lorsqu’un utilisateur s’inscrit, son compte reste en **statut “En attente”** jusqu’à **validation manuelle** par un administrateur (par défaut).
+- L'administrateur peut choisir d’**activer la validation automatique** des comptes via les paramètres du tableau de bord.
+
+### 🧑‍💼 Rôle de l’Administrateur
+
+- Gère la **validation ou le rejet** des utilisateurs nouvellement inscrits.
+- Peut créer, modifier ou supprimer des **élections**, ainsi que les **postes** à pourvoir.
+- Peut suivre les **statistiques en temps réel** sur la participation, les inscriptions et les votes.
+- Paramètre les règles du système via l’interface d’administration (activation des candidatures, clôture du vote, etc.).
+
+### 🗳️ Rôle du Candidat
+
+- Une fois validé, un **candidat** peut accéder à son **tableau de bord** et soumettre une **candidature** à un poste dans une élection en cours.
+- Le candidat peut consulter l’état de sa candidature et les résultats après la clôture des élections.
+
+### 🧑‍🤝‍🧑 Rôle de l’Électeur
+
+- Un **électeur validé** peut accéder à la section **"Voter"**, choisir une élection ouverte et exprimer son vote.
+- Le système garantit qu’un électeur ne vote qu’une seule fois par élection.
+
+### 👁️ Rôle du Spectateur
+
+- Les utilisateurs en mode **spectateur** peuvent uniquement **consulter les résultats** publics des élections disponibles.
+
+### 🗂️ Données Fictives
+
+- Pour faciliter la démonstration, plusieurs comptes (admin, électeur, candidat, spectateur) ainsi qu’une **élection fictive avec des postes** et des candidatures ont déjà été créés.
+- Ces données permettent de tester l’ensemble du processus dès le premier lancement.
+
+---
+
+L’ensemble de ces interactions est orchestré via des appels sécurisés à l’API backend (Node.js + Express), avec une gestion des statuts et rôles au niveau de la base de données SQLite.
+"""
+
 
 ## 🏗️ Architecture
 
