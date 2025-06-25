@@ -79,10 +79,10 @@ L'application sera accessible sur :
 
 | Rôle           | Email                 | Mot de passe |
 | -------------- | --------------------- | ------------ |
-| **Admin**      | admin@votesecure.fr   | admin123     |
-| **Candidat**   | marie.dubois@email.fr | candidate123 |
-| **Électeur**   | jean.dupont@email.fr  | voter123     |
-| **Spectateur** | paul.martin@email.fr  | spectator123 |
+| **Admin**      | admin@votesecure.sn   | admin123     |
+| **Candidat**   | aissatou.diop@education.sn | candidate123 |
+| **Électeur**   | mamadou.fall@education.sn  | voter123     |
+| **Spectateur** |  fatou.sarr@education.sn   | spectator123 |
 
 ## 📁 Structure Détaillée
 
