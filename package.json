@@ -5,10 +5,10 @@
   "scripts": {
     "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
     "dev:frontend": "vite",
-    "dev:backend": "cd backend && npm run dev",
+    "dev:backend": "cd api && npm run dev",
     "build": "vite build",
-    "setup": "npm install && cd backend && npm install && npm run init-db",
-    "start:backend": "cd backend && npm start",
+    "setup": "npm install && cd api && npm install && npm run init-db",
+    "start:backend": "cd api && npm start",
     "test": "vitest --run",
     "format.fix": "prettier --write .",
     "typecheck": "tsc"
