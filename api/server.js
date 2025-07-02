@@ -80,23 +80,15 @@ app.use((err, req, res, next) => {
 });
 
 // Initialize database and start server
-async function startServer() {
+async function initialize() {
   try {
     await initDatabase();
     console.log("✅ Database initialized successfully");
-
-    app.listen(PORT, () => {
-      console.log(`🚀 VoteSecure Backend API running on port ${PORT}`);
-      console.log(`📊 Health check: http://localhost:${PORT}/health`);
-      console.log(`🔗 API Base URL: http://localhost:${PORT}/api`);
-      console.log(`🌍 Environment: ${process.env.NODE_ENV}`);
-    });
   } catch (error) {
-    console.error("❌ Failed to start server:", error);
-    process.exit(1);
+    console.error("❌ Failed to initialize database:", error);
   }
 }
 
-startServer();
+initialize();
 
 module.exports = app;
